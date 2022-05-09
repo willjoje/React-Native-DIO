@@ -32,4 +32,4 @@
   - Style (StyleSheet)
   - Pressable
   - Linking API
-  - Add código nativo no AndroidManifest.xml para abrir link
+  - Add código nativo 
