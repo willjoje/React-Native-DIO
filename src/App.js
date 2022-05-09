@@ -18,7 +18,6 @@ const imageProfile = 'https://avatars.githubusercontent.com/u/80431390?v=4';
 const urlGithub = 'https://github.com/willjoje';
 
 const App = () => {
-
   const handlePressGithub = async () => {
     console.log('Verificando Link');
     const response = await Linking.canOpenURL(urlGithub);
@@ -40,8 +39,123 @@ const App = () => {
         <Text style={[style.defaultText, style.name]}>Willyam Jorge</Text>
         <Text style={[style.defaultText, style.nickname]}>willjoje</Text>
         <Text style={[style.defaultText, style.description]}>
-          CS Student | Web Developer | Casual Gamer
+          CS Student | Web Developer | Retro Gamer
         </Text>
+
+        <SafeAreaView style={style.tilesContainer}> 
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+          <View style={style.snake}></View>
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+          <View style={style.snake}></View>
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+          <View style={style.snake}></View>
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+          <View style={style.snake}></View>
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+          <View style={style.snake}></View>
+          <View style={style.snake}></View>
+          <View style={style.snake}></View>
+          <View style={style.snake}></View>
+          <View style={style.snake}></View>
+          <View style={style.snake}></View>
+          <View style={style.snake}></View>
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+          <View style={style.snake}></View>
+          <View style={style.snake}></View>
+          <View style={style.tiles}></View>
+          <View style={style.snake}></View>
+          <View style={style.snake}></View>
+          <View style={style.snake}></View>
+          <View style={style.tiles}></View>
+          <View style={style.snake}></View>
+          <View style={style.snake}></View>
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+
+          <View style={style.tiles}></View>
+          <View style={style.snake}></View>
+          <View style={style.snake}></View>
+          <View style={style.snake}></View>
+          <View style={style.snake}></View>
+          <View style={style.snake}></View>
+          <View style={style.snake}></View>
+          <View style={style.snake}></View>
+          <View style={style.snake}></View>
+          <View style={style.snake}></View>
+          <View style={style.snake}></View>
+          <View style={style.snake}></View>
+
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+          <View style={style.snake}></View>
+          <View style={style.tiles}></View>
+          <View style={style.snake}></View>
+          <View style={style.snake}></View>
+          <View style={style.snake}></View>
+          <View style={style.snake}></View>
+          <View style={style.snake}></View>
+          <View style={style.snake}></View>
+          <View style={style.snake}></View>
+          <View style={style.tiles}></View>
+          
+
+          <View style={style.snake}></View>
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+          <View style={style.snake}></View>
+          <View style={style.tiles}></View>
+          <View style={style.snake}></View>
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+          <View style={style.snake}></View>
+          <View style={style.tiles}></View>
+
+          <View style={style.snake}></View>
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+          <View style={style.snake}></View>
+          <View style={style.snake}></View>
+          <View style={style.tiles}></View>
+          <View style={style.snake}></View>
+          <View style={style.snake}></View>
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+          <View style={style.tiles}></View>
+        </SafeAreaView>
 
         <Pressable onPress={handlePressGithub}>
           <View style={style.button}>
@@ -70,6 +184,30 @@ const style = StyleSheet.create({
     alignItems: 'center',
     padding: 20,
   },
+
+  tilesContainer: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-evenly',
+    width: 240,
+  },
+
+  tiles: {
+    margin: 1,
+    height: 16,
+    width: 16,
+    backgroundColor: '#026D37',
+    borderRadius: 6,
+  },
+
+  snake: {
+    margin: 1,
+    height: 16,
+    width: 16,
+    backgroundColor: '#800080',
+    borderRadius: 6,
+  },
+
   avatar: {
     height: 200,
     width: 200,
